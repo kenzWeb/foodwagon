@@ -1,0 +1,94 @@
+.proceed {
+	margin-top: clamp(4.25rem, 2.986rem + 6.32vw, 8.438rem);
+}
+
+.proceed__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.proceed__card {
+	filter: drop-shadow(0px 14px 15px rgba(124, 124, 124, 0.06)) drop-shadow(0px 27px 82px rgba(124, 124, 124, 0.28));
+	border-radius: 16px;
+	display: grid;
+	grid-template-columns: 35.14% 64.86%;
+}
+
+.proceed__card1 {
+	filter: drop-shadow(0px 14px 15px rgba(124, 124, 124, 0.06)) drop-shadow(0px 27px 82px rgba(124, 124, 124, 0.28));
+	border-radius: 16px;
+	margin-top: clamp(2.5rem, 1.745rem + 3.77vw, 5rem);
+	margin-bottom: clamp(2.5rem, 1.745rem + 3.77vw, 5rem);
+	display: grid;
+	grid-template-columns: 64.86% 35.14%;
+}
+
+.proceed__card-left {
+	background-color: #fff;
+	padding-top: 120px;
+	padding-right: 56px;
+	padding-left: 56px;
+	@media (max-width: 1335px) {
+		padding-bottom: 56px;
+	}
+
+}
+.proceed__card-right1 {
+	background-color: #fff;
+	padding-top: 120px;
+	padding-left: 56px;
+	padding-right: 56px;
+	padding-bottom: 56px;
+	width: 100%;
+}
+
+.proceed__title {
+	font-weight: 700;
+	font-size: clamp(0.75rem, 0.071rem + 3.4vw, 3rem);
+	line-height: 112%;
+	margin-bottom: 20px;
+
+	span {
+		color: $OrangeTextSec;
+	}
+}
+
+.proceed__subtitle {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: clamp(0.563rem, 0.393rem + 0.85vw, 1.125rem);
+	line-height: 140%;
+	color: rgba(97, 97, 97, 0.69);
+}
+
+.proceed__img {
+	object-fit: cover;
+	width: clamp(26.25rem, 16.061rem + 50.94vw, 60rem);
+	height: 100%;
+}
+
+.proceed__card-button {
+	display: flex;
+	padding: 21px 0;
+	margin-top: 10%;
+	justify-content: center;
+	cursor: pointer;
+	background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+	box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+	border-radius: 8px;
+
+	h2 {
+		margin-right: 10px;
+		font-weight: 900;
+		font-size: clamp(0.5rem, 0.311rem + 0.94vw, 1.125rem);
+		line-height: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	img {
+		width: clamp(0.5rem, 0.349rem + 0.75vw, 1rem);
+		height: clamp(0.5rem, 0.349rem + 0.75vw, 1rem);
+	}
+}

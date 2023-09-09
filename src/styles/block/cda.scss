@@ -1,0 +1,53 @@
+.cda {
+	margin-top: 125px;
+	background-image: url('../../../public/img/cda/1.svg');
+	background-repeat: no-repeat;
+	object-fit: cover;
+	padding-top: 91px;
+	padding-bottom: 75px;
+	height: 100%;
+}
+
+.cda__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.cda__title {
+	max-width: 728px;
+	font-family: 'Source Sans Pro';
+	font-weight: 900;
+	font-size: clamp(1.5rem, 0.877rem + 3.11vw, 3.563rem);
+	line-height: 97.5%;
+	text-align: center;
+	color: #fff;
+}
+
+.cda__button {
+	margin-top: 62px;
+	display: flex;
+	align-items: center;
+	padding: clamp(0.688rem, 0.499rem + 0.94vw, 1.313rem) clamp(1.5rem, 1.047rem + 2.26vw, 3rem);
+
+	background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+	box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+	border-radius: 8px;
+
+	h2 {
+		font-family: 'Source Sans Pro';
+		font-weight: 900;
+		font-size: clamp(0.563rem, 0.393rem + 0.85vw, 1.125rem);
+		line-height: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-right: 10px;
+	}
+
+	img {
+		width: clamp(0.313rem, 0.218rem + 0.47vw, 0.625rem);
+		height: clamp(0.5rem, 0.349rem + 0.75vw, 1rem);
+	}
+}

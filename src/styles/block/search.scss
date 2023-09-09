@@ -1,0 +1,45 @@
+.search {
+	padding-top: clamp(2.563rem, 1.789rem + 3.87vw, 5.125rem);
+	padding-bottom: clamp(1.438rem, 0.834rem + 3.02vw, 3.438rem);
+	margin-top: clamp(2.563rem, 1.789rem + 3.87vw, 5.125rem);
+	background: #FEFAF1;
+}
+
+
+.search__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: clamp(3.625rem, 2.531rem + 5.47vw, 7.25rem);
+}
+
+.search__title {
+	color: #212121;
+}
+
+.search__slider-btn {
+	display: flex;
+	align-items: center;
+}
+
+.search__btn-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 100%;
+	text-align: center;
+	color: #FFB30E;
+	margin-right: 10px;
+}
+
+.search__arrow {
+	max-width: 10px;
+	max-height: 10px;
+}
+
+.search__img {
+	border-radius: 50%;
+	margin-bottom: 26px;
+}
+
+.search__slider-title {
+	text-align: center;
+}

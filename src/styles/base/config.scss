@@ -1,0 +1,111 @@
+// colors
+
+// Text
+
+$black: #000000;
+$blackSecond: #212121;
+$white: #fff;
+$firstTextColor: #424242;
+$SecTextColor: #504F4F;
+$GrayTextFirst: #9E9E9E;
+$GrayTextSec: #757575;
+$GrayTextThird: #616161;
+$OrangeTextFirst: #F17228;
+$OrangeTextSec: #FFB30E;
+$GreenTextGreen: #79B93C;
+
+// Background
+
+$BgFirstColor: rgba(241, 114, 40, 0.2);
+$BgSecColor: rgba(121, 185, 60, 0.2);
+$BgOrangeColor: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+$BgRedButton: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
+
+// padding
+$p-sm: 15px;
+$p-md: 20px;
+$p-lg: 30px;
+$p-xl: 40px;
+$p-2xl: 50px;
+
+// padding
+$sm: 10px;
+$m-sm: 15px;
+$m-md: 20px;
+$m-lg: 30px;
+$m-xl: 40px;
+$m-2xl: 50px;
+
+// width
+$s: 10%;
+$w-s: 20%;
+$w-sm: 25%;
+$w-md: 50px;
+$w-lg: 50%;
+$w-xl: 60%;
+$w-2xl: 72%;
+$w-3xl: 80%;
+$w-4xl: 90%;
+$w-full: 100%;
+
+// height
+$h-sm: 20px;
+$h-md: 25px;
+$h-lg: 30px;
+$h-xl: 40px;
+$h-2xl: 50px;
+$h-3xl: 10vh;
+$h-4xl: 20vh;
+$h-full: 100vh;
+
+// sizeClamp
+
+$clampMt80: clamp(1.875rem, 0.932rem + 4.72vw, 5rem);
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// mixin
+
+
+@mixin transition {
+	transition: all 0.5s ease-in;
+}
+
+@mixin zindex {
+	position: relative;
+	z-index: 99;
+}
+
+@mixin flex($justify, $center, $center1) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $center;
+	text-align: $center1;
+}
+
+@mixin absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@mixin button($color, $background, $height, $latitude, $weight, $line-height, $backgroundHover, $colorHover, $radius) {
+	background: $background;
+	line-height: $line-height;
+	color: $color;
+	padding: $height $latitude;
+	font-size: 18px;
+	font-weight: $weight;
+	border-radius: $radius;
+	@include transition;
+
+	&:hover {
+		color: $colorHover;
+		background: $backgroundHover;
+	}
+}

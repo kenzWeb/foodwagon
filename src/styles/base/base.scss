@@ -1,0 +1,63 @@
+// Tailwind
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+// import
+
+// work
+@import "reset";
+@import "config";
+
+// block
+
+@import "../block/header.scss";
+@import "../block/home.scss";
+@import "../block/food.scss";
+@import "../block/work.scss";
+@import "../block/popular.scss";
+@import "../block/featured.scss";
+@import "../block/search.scss";
+@import "../block/info.scss";
+@import "../block/proceed.scss";
+@import "../block/cda.scss";
+@import "../block/footer.scss";
+
+// block
+@import "fonts";
+@import "swiper";
+@import "media";
+
+[class*="__container"] {
+	max-width: 1380px;
+	margin: 0 auto;
+	padding: 0 $p-sm;
+}
+
+[class*="__shortContainer"] {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 $p-sm;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color: $firstTextColor;
+}
+
+h2 {
+	color: $blackSecond;
+	font-size: clamp(0.75rem, 0.645rem + 0.53vw, 1.125rem);
+}
+
+p {
+	color: $GrayTextFirst;
+}
+
+.title {
+	font-size: clamp(1.375rem, 0.979rem + 1.98vw, 2.688rem);
+}

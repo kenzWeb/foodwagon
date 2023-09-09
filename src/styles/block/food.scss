@@ -1,0 +1,65 @@
+.food {
+	margin-top: clamp(1.875rem, 0.932rem + 4.72vw, 5rem);
+}
+
+
+.food__items {
+	align-items: center;
+	gap: 15px;
+	display: flex;
+
+}
+
+.food__card {
+	& img {
+		max-width: 100%;
+	}
+}
+
+.food__card-img {
+	position: relative;
+	
+	& img {
+		border-radius: 18px;
+	}
+}
+
+.food__card-rebate {
+	display: flex;
+	align-items: center;
+	bottom: 0;
+	position: absolute;
+	line-height: 65px;
+	max-width: 140px;
+	max-height: 83px;
+	padding: 10px;
+	background: $OrangeTextSec;
+	font-weight: 700;
+	border-radius: 0px 32px 0px 0px;
+
+	& h1 {
+		font-size: clamp(2.125rem, 1.483rem + 3.21vw, 4.25rem);
+		color: $white;
+	}
+
+	& h2 {
+		color: $white;
+		font-size: clamp(1rem, 0.642rem + 1.79vw, 2.188rem);
+		line-height: clamp(0.625rem, 0.436rem + 0.94vw, 1.25rem);
+		margin-bottom: 10px;
+	}
+
+	& h3 {
+		color: $white;
+		font-size: clamp(0.75rem, 0.561rem + 0.94vw, 1.375rem);
+		line-height: clamp(0.5rem, 0.368rem + 0.66vw, 0.938rem);
+		font-weight: 400;
+	}
+}
+
+.food__remaining {
+	color: $OrangeTextFirst;
+	padding: 8px 16px;
+	background: $BgFirstColor;
+	border-radius: 8px;
+}

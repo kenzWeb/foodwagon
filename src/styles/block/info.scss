@@ -1,0 +1,108 @@
+.info {
+	padding-top: clamp(4.688rem, 3.65rem + 5.19vw, 8.125rem);
+	background-color: #FEEFD0;
+
+	@media (max-width: 480px) {
+		padding-bottom: 40px;
+	}
+}
+
+.info__shortContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.info__header {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 55px;
+	box-shadow: 0px 14px 15px rgba(255, 174, 0, 0.01), 0px 27px 82px rgba(255, 174, 0, 0.28);
+	border-radius: 46px;
+}
+
+.info__header-card {
+	display: flex;
+	align-items: center;
+
+	&:not(:last-child) {
+		border-right: 2px solid #CFCFCF;
+		padding-right: 75px;
+	}
+
+	&:not(:first-child) {
+		padding-left: 35px;
+	}
+}
+
+.info__card-img {
+	width: clamp(4.25rem, 2.833rem + 7.08vw, 8.5rem);
+	height: clamp(4.25rem, 2.833rem + 7.08vw, 8.5rem);
+	margin-right: 30px;
+}
+
+.info__card-title {
+	font-weight: 700;
+	font-size: clamp(1.063rem, 0.688rem + 1.88vw, 2.188rem);
+	line-height: 120%;
+	background: linear-gradient(92.84deg, #FB3C00 -47.72%, #FFB800 136.81%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.info__info {
+	display: flex;
+	text-align: center;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.info__info-left {
+	margin-top: 130px;
+}
+
+.info__info-right {
+	margin-top: 170px;
+	
+	@media (max-width: 480px) {
+		margin-top: 20px;
+	}
+}
+
+.info__right-title {
+	background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: 700;
+	white-space: nowrap;
+	font-size: clamp(1.5rem, 0.583rem + 4.58vw, 4.25rem);
+	line-height: 106%;
+}
+
+.info__right-subtitle {
+	margin-top: 16px;
+	margin-bottom: 40px;
+	font-weight: 400;
+	font-size: clamp(0.563rem, 0.375rem + 0.94vw, 1.125rem);
+	line-height: 140%;
+	max-width: 429px;
+	color: #827E7E;
+}
+
+.info__right-buttons {
+	display: flex;
+}
+
+.info__right-btn_ios {
+	mix-blend-mode: normal;
+	box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+}
+
+.info__right-btn_google {
+	margin-right: 20px;
+	mix-blend-mode: normal;
+	box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+}

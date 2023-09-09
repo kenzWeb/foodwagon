@@ -1,0 +1,51 @@
+.nav__btn {
+	background-image: url('../../../public/img/buttons/arrow-left-big.svg');
+	background-size: clamp(0.625rem, 0.455rem + 0.85vw, 1.188rem);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	text-align: center;
+	object-fit: contain;
+	width: clamp(1.5rem, 0.519rem + 4.91vw, 4.75rem);
+	height: clamp(1.5rem, 0.519rem + 4.91vw, 4.75rem);
+	box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+	border-radius: 92px;
+	background-color: $OrangeTextSec;
+	top: 43%;
+	z-index: 2;
+}
+
+.nav-next {
+	position: absolute;
+	right: 30px;
+	transform: rotate(180deg);
+}
+
+.nav-prev {
+	position: absolute;
+	left: 30px;
+}
+
+.search__btn {
+	background-image: url('../../../public/img/buttons/arrow-left-big.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	cursor: pointer;
+	text-align: center;
+	object-fit: contain;
+	width: clamp(1.5rem, 0.519rem + 4.91vw, 4.75rem);
+	height: clamp(1.5rem, 0.519rem + 4.91vw, 4.75rem);
+	box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+	border-radius: 92px;
+	background-color: $OrangeTextSec;
+	z-index: 2;
+}
+
+.search__prev {
+	margin-right: 16px;
+}
+
+.search__next {
+	transform: rotate(180deg);
+}

@@ -1,0 +1,110 @@
+.home {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	padding-bottom: 132px;
+	background-image: url('../../../public/img/bg.jpg');
+}
+
+.home__left {
+	display: flex;
+	margin-top: 100px;
+	flex-direction: column;
+}
+
+.home__title {
+	font-weight: 700;
+	font-size: clamp(4.5rem, 4.198rem + 1.51vw, 5.5rem);
+	color: $white;
+	line-height: 100%;
+	margin-bottom: 15px;
+}
+
+.home__subtitle {
+	color: $SecTextColor;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 120%;
+	margin-bottom: 32px;
+}
+
+.home__card {
+	padding: 24px;
+	max-width: calc(858px - 48px);
+	filter: drop-shadow(0px 5px 10px rgba(255, 174, 0, 0.26)) drop-shadow(0px 20px 40px rgba(255, 174, 0, 0.29));
+	border-radius: 16px;
+	background-color: $white;
+	display: flex;
+	flex-direction: column;
+}
+
+.home__card-tab {
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+	align-items: center;
+	display: flex;
+}
+
+.home__card-button_first {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	@include button($OrangeTextFirst, $BgFirstColor, 10px, 24px, 700, 100%, $OrangeTextSec, $white, 8px);
+
+	& img {
+		margin-right: 10px;
+	}
+}
+
+.home__card-button_second {
+	display: flex;
+	align-items: center;
+	@include button($GrayTextSec, $white, 10px, 24px, 700, 100%, $OrangeTextFirst, $white, 8px);
+
+	& img {
+		margin-right: 10px;
+	}
+}
+
+.home__form {
+	padding: 12px 12px 16px;
+	background: #F5F5F5;
+	border-radius: 8px;
+	display: flex;
+
+	& img {
+		margin-right: 12px;
+	}
+
+	& input {
+		padding-right: 20px;
+		width: clamp(10rem, 3.962rem + 30.19vw, 30rem);
+	}
+}
+
+.home__form-button {
+	@include button($white, $BgRedButton, 24px, clamp(1.125rem, 0.559rem + 2.83vw, 3rem), 700, 100%, $BgOrangeColor, $OrangeTextFirst, 8px);
+	@include transition;
+	margin-left: 16px;
+	align-items: center;
+	display: flex;
+
+	& img {
+		margin-right: 10px;
+	}
+}
+
+.home__form-title {
+	@include transition;
+	color: white;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.home__right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
